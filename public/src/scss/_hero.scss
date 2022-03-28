@@ -1,87 +1,120 @@
 .hero {
+  background-color: $darkBlue;
 
-    background-color: $veryLightGray;
+  .container {
+    @include breakpoint-up(large) {
+      display: flex;
+      align-items: center;
+    }
+  }
 
-    .container {
-        @include breakpoint-up(large) {
-            display: flex;
-            align-items: center;
-        }
+  &__image {
+    position: relative;
+    background-image: url("/src/img/heroImg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 17.5rem;
+
+    @include breakpoint-up(medium) {
+      min-height: 25rem;
+      background-position: center 0%;
     }
 
-
-
-    &__image {
-        position: relative;
-        background-image: url('/images/bg-intro-mobile.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        min-height: 17.5rem;
-
-        @include breakpoint-up(medium) {
-            min-height: 25rem;
-            background-position: center 0%;
-        }
-
-        @include breakpoint-up(large) {
-            flex: 3;
-            order: 2;
-            height: 41rem;
-            background-image: none;
-        }
-
-
-        &::before {
-
-            @include breakpoint-up(large) {
-                content: "";
-                position: absolute;
-                height: 100%;
-                background-image: url('/images/bg-intro-desktop.svg');
-                background-repeat: no-repeat;
-                background-position: center bottom;
-                width: 150%;
-                background-size: 122%;
-                background-position: 0% 83%;
-            }
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-image: url('/images/image-mockups.png');
-            background-size: 93%;
-            background-repeat: no-repeat;
-            background-position: center bottom;
-
-            @include breakpoint-up(medium) {
-                background-size: 52%;
-            }
-
-            @include breakpoint-up(large) {
-                width: 120%;
-                height: 122%;
-                background-size: 94%;
-                background-position: center 150%;
-                left: 22%;
-            }
-        }
-
-
+    @include breakpoint-up(large) {
+      flex: 3;
+      order: 2;
+      height: 41rem;
+      background-image: none;
     }
 
-    &__text {
+    // &::before {
+    //   @include breakpoint-up(large) {
+    //     content: "";
+    //     position: absolute;
+    //     height: 100%;
+    //     background-image: url("/src/img/heroImg.png");
+    //     background-repeat: no-repeat;
+    //     background-position: center bottom;
+    //     width: 100%;
+    //     background-size: 100%;
+    //     background-position: 100% 50%;
+    //   }
+    // }
 
-        text-align: center;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url("/src/img/heroImg.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
 
-        @include breakpoint-up(large) {
-            flex: 2;
-            order: 1;
-            text-align: left;
-        }
+      @include breakpoint-up(medium) {
+        background-size: 52%;
+      }
 
+      @include breakpoint-up(large) {
+        width: 100%;
+        height: 100%;
+        background-size: 100%;
+        background-position: center 58%;
+        left: -7%;
+      }
     }
+  }
+
+  &__text {
+    text-align: center;
+
+    img {
+      width: 163px;
+      margin-bottom: 50px;
+    }
+
+    h1 {
+      font-family: "Ruda", sans-serif;
+      font-weight: 900;
+      font-size: $font-lg;
+      span {
+        color: $orangeIsh;
+      }
+    }
+
+    p {
+      font-family: "Public Sans";
+      font-style: normal;
+      font-weight: 100;
+      font-size: 24px;
+      line-height: 28px;
+      color: $lightBlue;
+    }
+
+    @include breakpoint-up(large) {
+      flex: 2;
+      order: 1;
+      text-align: left;
+
+      img {
+        width: 200px;
+      }
+      h1 {
+        width: 700px;
+        font-weight: 900;
+        font-size: $font-xlg;
+      }
+
+      p {
+        width: 430px;
+        font-family: "Public Sans";
+        font-style: normal;
+        font-weight: 100;
+        font-size: 24px;
+        line-height: 28px;
+        color: $lightBlue;
+      }
+    }
+  }
 }
