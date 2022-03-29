@@ -1,0 +1,44 @@
+.solutions {
+  background-color: $lightBlue;
+  &__intro {
+    width: 100%;
+    h3 {
+      text-align: center;
+      color: $darkBlue;
+      font-family: "Ruda";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 100%;
+      letter-spacing: -0.03em;
+      margin-bottom: 40px;
+    }
+  }
+  .carousel {
+    &-cell {
+      img {
+        width: 162px;
+        height: 162px;
+        margin-right: 45px;
+      }
+
+      p {
+        width: 161px;
+        height: 57px;
+
+        font-family: "Public Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: $font-sm;
+        line-height: 19px;
+        text-align: center;
+        color: $darkBlue;
+      }
+    }
+
+    .flickity-button {
+      background: none;
+      color: $darkBlue;
+    }
+  }
+}

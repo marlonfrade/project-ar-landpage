@@ -1,0 +1,38 @@
+.clients {
+  &__intro {
+    width: 100%;
+
+    h3 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+      font-family: "Ruda";
+      font-style: normal;
+      font-weight: 900;
+      font-size: $font-med;
+      line-height: 100%;
+      letter-spacing: -0.03em;
+      color: $darkBlue;
+    }
+  }
+
+  &__images {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5.875rem;
+    margin: 0 auto;
+
+    img {
+      margin: 0 auto;
+    }
+
+    @include breakpoint-up(medium) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include breakpoint-up(large) {
+      grid-template-columns: repeat(6, 1fr);
+      gap: 0.875rem;
+    }
+  }
+}

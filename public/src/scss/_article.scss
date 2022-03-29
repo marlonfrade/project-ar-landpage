@@ -1,66 +1,57 @@
 .articles {
-    background-color: $veryLightGray;
+  background-color: $orangeIsh;
 }
 
 .article {
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5.875rem;
 
-    &__grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1.875rem;
-
-        @include breakpoint-up(medium) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        @include breakpoint-up(large) {
-            grid-template-columns: repeat(4, 1fr);
-        }
+    @include breakpoint-up(medium) {
+      grid-template-columns: repeat(2, 1fr);
     }
 
-    &__item {
-        border-radius: 5px;
-        overflow: hidden;
-        background-color: $white;
-        box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
-        transition: all 150ms ease-in-out;
-
-        &:hover {
-            transform: scale(1.05);
-        }
+    @include breakpoint-up(large) {
+      grid-template-columns: repeat(3, 1fr);
     }
+  }
 
-    &__image {
-        height: 12.5rem;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
+  &__item {
+    overflow: hidden;
+    background: none;
+    // box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
     }
+  }
 
-    &__text {
+  &__title {
+    font-size: 1.0625rem;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
 
-        padding: 1.875rem 1.875rem 2.5rem 1.875rem;
-        color: $grayishBlue;
+    h1 {
+      font-weight: 900;
+      color: $mediumBlue;
 
-        @include breakpoint-up(medium) {
-            padding: 1.875rem 1.562rem;
-        }
+      @include breakpoint-down(medium) {
+        text-align: center;
+        font-size: $font-lg;
+        font-weight: 900;
+        color: $mediumBlue;
+      }
     }
+  }
 
-    &__author {
-        font-size: 0.625rem;
-        margin-bottom: 0.75rem;
-    }
-
-    &__title {
-        font-size: 1.0625rem;
-        line-height: 1.2;
-        color: $darkBlue;
-        margin-bottom: 0.75rem;
-    }
-
-    &__description {
-        font-size: 0.8125rem;
-    }
-
+  &__description {
+    color: $mediumBlue;
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+  }
 }

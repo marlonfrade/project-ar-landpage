@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   font-family: "Public Sans", sans-serif;
@@ -165,6 +166,36 @@ button,
   &:hover {
     background: $orangeIsh;
     color: $darkBlue;
+  }
+}
+
+form {
+  width: 528px;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  background: $lightBlue;
+  position: absolute;
+  left: 50%;
+  top: 84%;
+
+  h3 {
+    font-family: "Ruda";
+    font-style: normal;
+    font-weight: 900;
+    font-size: $font-med;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: $darkBlue;
+  }
+
+  input {
+    border: 1px solid #eab281;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: none;
+    padding: 10px 24px;
   }
 }
 

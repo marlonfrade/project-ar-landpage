@@ -18,6 +18,12 @@
       rel="stylesheet"
     />
 
+    <!-- Flickity -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
     <!-- FavIcons -->
     <link
       rel="shortcut icon"
@@ -43,14 +49,17 @@
       </div>
     </section>
 
-    <section class="feature">
+    <section class="feature container container--px container--pb">
       <div class="feature__intro">
         <h3>Veja o que estão falando sobre nós</h3>
       </div>
       <div class="feature__grid">
         <div class="feature__card">
           <div class="feature__card__logo">
-            <img src="" alt="" />
+            <img
+              src="/src/img/AMBIENTALIS -engenharia.png"
+              alt="Ambientalis Logo"
+            />
           </div>
           <div class="feature__card__content">
             <p>
@@ -60,8 +69,8 @@
             </p>
           </div>
           <div class="feature__card__info">
-            <img src="" alt="" />
-            <div class="flex">
+            <img src="/src/img/cardAuthor.png" alt="Card Author Image" />
+            <div class="author">
               <h3>Silvia Sobrenome</h3>
               <p>Cargo da Silvia</p>
             </div>
@@ -69,7 +78,10 @@
         </div>
         <div class="feature__card">
           <div class="feature__card__logo">
-            <img src="" alt="" />
+            <img
+              src="/src/img/PROVEL -vistoria.png"
+              alt="Provel Vistoria Logo "
+            />
           </div>
           <div class="feature__card__content">
             <p>
@@ -79,8 +91,8 @@
             </p>
           </div>
           <div class="feature__card__info">
-            <img src="" alt="" />
-            <div class="flex">
+            <img src="/src/img/cardAuthor.png" alt="Card Author Image" />
+            <div class="author">
               <h3>Evandro Guarani</h3>
               <p>Cargo do Evandro</p>
             </div>
@@ -91,28 +103,200 @@
 
     <section class="articles">
       <div class="article__content container container--pall">
-        <h2>Latest Articles</h2>
-
         <div class="article__grid">
-          <a href="#" class="article__item">
-            <div
-              class="article__image"
-              style="background-image: url(/images/image-currency.jpg)"
-            ></div>
-            <div class="article__text">
-              <div class="article__author">By Claire Robinson</div>
-              <div class="article__title">
-                Receive money in any currency with no fees
-              </div>
-              <div class="article__description">
-                The world is getting smaller and we’re becoming more mobile. So
-                why should you be forced to only receive money in a single …
-              </div>
+          <div class="article__item">
+            <div class="article__title">
+              <h1>Why?</h1>
             </div>
-          </a>
+            <div class="article__description">
+              Para simplificar os processos de gestão de viagens, minimizar
+              custos e levar experiência para as viagens com o que há de mais
+              moderno no setor.
+            </div>
+          </div>
+          <div class="article__item">
+            <div class="article__title">
+              <h1>How?</h1>
+            </div>
+            <div class="article__description">
+              Através da tecnologia e inteligencia de mercado buscamos nos
+              maiores de aéreo e terrestres garantindo assim os menores preços.
+            </div>
+          </div>
+          <div class="article__item">
+            <div class="article__title">
+              <h1>What?</h1>
+            </div>
+            <div class="article__description">
+              Oferecem os melhores preços em passagens aéreas, terrestres e
+              hotéis, além da gestão completa da viagem, em uma solução
+              all-in-one.
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
+    <section class="clients container container--pall">
+      <div class="clients__intro">
+        <h3>Conheça quem já se beneficia e é nosso cliente</h3>
+      </div>
+      <div class="clients__images flex flex-jc-sb container container--px">
+        <img
+          src="/src/img/AMBIENTALIS -engenharia.png"
+          alt="Ambientalis Engenharia"
+        />
+        <img
+          src="/src/img/CK -construtora_Prancheta 1.png"
+          alt="CK Construtora"
+        />
+        <img src="/src/img/MENU POKE_Prancheta 1.png" alt="Menu Poke" />
+        <img src="/src/img/TR Log-transportes.png" alt="TR Log Transportes" />
+        <img src="/src/img/RUPUS logistica.png" alt="Rupus Logistica" />
+        <img src="/src/img/PROVEL -vistoria.png" alt="Provel Vistorias" />
+      </div>
+    </section>
+
+    <section class="solutions container container--pall">
+      <div class="solutions__intro">
+        <h3>A solução completa para viagens corporativas</h3>
+      </div>
+      <div class="carousel" data-flickity='{ "groupCells": true }'>
+        <div class="carousel-cell">
+          <img src="/src/img/ico-hospedagem.png" alt="Hospedagem" />
+          <p>Hospedagens nacionais e internacionais</p>
+        </div>
+        <div class="carousel-cell">
+          <img src="/src/img/ico-passages-aereas.png" alt="Passagens Aereas" />
+          <p>Passagens Aéreas nacionais e internacionais</p>
+        </div>
+        <div class="carousel-cell">
+          <img src="/src/img/ico-passagens.png" alt="Passagens Rodoviárias" />
+          <p>Passagens Rodoviárias</p>
+        </div>
+        <div class="carousel-cell">
+          <img src="/src/img/ico-checkin.png" alt="Check-in antecipado" />
+          <p>Check-in antecipado</p>
+        </div>
+        <div class="carousel-cell">
+          <img
+            src="/src/img/ico-vistos-consulares.png"
+            alt="Vistos Consulares"
+          />
+          <p>Vistos Consulares translado e receptivo</p>
+        </div>
+        <div class="carousel-cell">
+          <img src="/src/img/ico-gestao-de-custos.png" alt="gestao de custos" />
+          <p>Gestão de Custo</p>
+        </div>
+        <div class="carousel-cell">
+          <img
+            src="/src/img/ico-pacotes-viagens.png"
+            alt="Pacotes de Viagens"
+          />
+          <p>Pacotes Personalizados e viagens de incentivo</p>
+        </div>
+        <div class="carousel-cell">
+          <img src="/src/img/ico-seguro-viagem.png" alt="Seguro Viagem" />
+          <p>Seguro Viagem</p>
+        </div>
+        <div class="carousel-cell">
+          <img
+            src="/src/img/ico-locacao-de-veiculos.png"
+            alt="Locacao de Veiculos"
+          />
+          <p>
+            Locação de Veículos nacionais e internacionais com ou sem motoristas
+          </p>
+        </div>
+        <div class="carousel-cell">
+          <img
+            src="/src/img/ico-cruzeiros-marítimos.png"
+            alt="Cruzeiros Maritimos"
+          />
+          <p>Cruzeiros</p>
+        </div>
+        <div class="carousel-cell">
+          <img
+            src="/src/img/ico-atendimento-24h.png"
+            alt="Atendimento 24horas"
+          />
+          <p>Atendimento emergencial 24h</p>
+        </div>
+        <div class="carousel-cell">
+          <img src="/src/img/ico-menor-preco.png" alt="Menor Preco" />
+          <p>Menor Preço</p>
+        </div>
+        <div class="carousel-cell">
+          <img src="/src/img/ico-pontuacao.png" alt="Pontuacao" />
+          <p>Pontuação em produtos de fidelidade</p>
+        </div>
+        <div class="carousel-cell">
+          <img
+            src="/src/img/ico-congresso-e-evento.png"
+            alt="Congressos e Eventos"
+          />
+          <p>Congressos e eventos</p>
+        </div>
+        <div class="carousel-cell">
+          <img src="/src/img/ico-salas-vip.png" alt="Salas Vip" />
+          <p>Salas VIP no Brasil e exterior</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner container container--pall">
+      <div class="banner__intro">
+        <h3>
+          Existimos para atender viajantes independentes, grupos executivos e
+          agências de turismo
+        </h3>
+      </div>
+      <div class="banner__content">
+        <h1>Encontre eficiência e controle total na gestão de suas viagens</h1>
+      </div>
+      <div class="banner__cta">
+        <button type="button">QUERO VIAJAR COM ECONOMIA</button>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="contact__intro container container--pall">
+        <h2>Fale com a gente</h2>
+        <p>
+          Quer viajar sem burocracias, pagando menos? Envie uma mensagem para a
+          gente que um de nossos especialistas fará entrará em contato.
+        </p>
+      </div>
+    </section>
+
+    <form action="" method="post" class="container container--pall">
+      <h3>Quero viajar sem burocracia</h3>
+
+      <label for="name">Nome*</label>
+      <input type="text" placeholder="Qual seu nome?" />
+
+      <label for="company">Empresa</label>
+      <input type="text" placeholder="Digite o nome da sua empresa" />
+
+      <label for="phone">Telefone*</label>
+      <input type="text" placeholder="Qual número de seu telefone?" />
+
+      <label for="message">Mensagem*</label>
+      <textarea
+        name="message"
+        id="message"
+        cols="30"
+        rows="10"
+        placeholder="Digite sua mensagem"
+      ></textarea>
+
+      <button type="submit">Quero Receber Contato</button>
+      <p>
+        <span>Seus dados estão seguros. </span> Clicando no botão acima você
+        autoriza que a empresa AR Viagens faça contato.
+      </p>
+    </form>
 
     <footer class="footer">
       <div class="container">
@@ -164,6 +348,6 @@
       </div>
     </footer>
 
-    <script src="/app/js/script.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </body>
 </html>
