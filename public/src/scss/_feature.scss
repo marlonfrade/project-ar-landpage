@@ -13,9 +13,13 @@
     text-align: center;
 
     h3 {
-      width: 100%;
-      font-family: "Ruda", sans-serif;
+      font-family: "Ruda";
+      font-style: normal;
       font-weight: 900;
+      font-size: $font-med;
+      line-height: 100%;
+      text-align: center;
+      letter-spacing: -0.03em;
       color: $darkBlue;
     }
   }

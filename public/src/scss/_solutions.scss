@@ -16,10 +16,11 @@
   }
   .carousel {
     &-cell {
+      margin-right: 50px;
+      margin-left: 50px;
       img {
         width: 162px;
         height: 162px;
-        margin-right: 45px;
       }
 
       p {

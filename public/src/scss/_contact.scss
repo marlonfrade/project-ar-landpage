@@ -1,7 +1,12 @@
 .contact {
-  width: 50%;
+  width: 100%;
+
+  @include breakpoint-up(large) {
+    width: 60%;
+  }
 
   &__intro {
+    padding-left: 10%;
     h2 {
       font-family: "Ruda";
       font-style: normal;
@@ -10,15 +15,33 @@
       line-height: 100%;
       letter-spacing: -0.03em;
       color: $lightBlue;
+
+      @include breakpoint-down(medium) {
+        text-align: center;
+      }
     }
 
     p {
+      width: 437px;
       font-family: "Public Sans";
       font-style: normal;
       font-weight: 500;
       font-size: $font-med;
       line-height: 28px;
       color: $lightBlue;
+
+      @include breakpoint-down(medium) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    @include breakpoint-down(medium) {
+      padding: 4.375rem 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
