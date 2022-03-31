@@ -5,6 +5,10 @@
     width: 60%;
   }
 
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+
   &__intro {
     padding-left: 10%;
     h2 {

@@ -98,6 +98,32 @@
   }
 }
 
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -372,6 +398,14 @@ form .closeBtn:hover,
   color: red;
 }
 
+form .error,
+.form .error {
+  font-size: 12px;
+  font-weight: 100;
+  margin: 0;
+  color: #f24463;
+}
+
 form h3,
 .form h3 {
   font-family: "Ruda";
@@ -544,6 +578,145 @@ form p span,
   color: #0f1a2d;
 }
 
+.server_message_error {
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  margin-left: -175px;
+  top: 5%;
+  width: 350px;
+  display: none;
+  padding: 5px 12px;
+  border-radius: 10px;
+  color: white;
+  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  background-color: #f24463;
+}
+
+@media (min-width: 64em) {
+  .server_message_error {
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    margin-left: -225px;
+    top: 5%;
+    width: 450px;
+  }
+}
+
+.server_message_error p {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 1.125rem;
+}
+
+.server_message_error a,
+.server_message_error button,
+.server_message_error .button {
+  padding: 5px 12px;
+  background: white;
+  color: #f24463;
+  border-radius: 5px;
+  border: 1px solid white;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.server_message_error a:hover,
+.server_message_error button:hover,
+.server_message_error .button:hover {
+  background: none;
+  border: 1px solid white;
+  color: white;
+}
+
+.server_message_error span {
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.server_message_error span:hover {
+  color: #0f1a2d;
+}
+
+.server_message_success {
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  margin-left: -175px;
+  top: 5%;
+  width: 350px;
+  display: none;
+  padding: 5px 12px;
+  border-radius: 10px;
+  color: white;
+  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  background-color: #1ec264;
+}
+
+@media (min-width: 64em) {
+  .server_message_success {
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    margin-left: -225px;
+    top: 5%;
+    width: 450px;
+  }
+}
+
+.server_message_success p {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 1.125rem;
+}
+
+.server_message_success a {
+  padding: 1px 12px;
+  background: white;
+  color: #1ec264;
+  border-radius: 5px;
+  border: 1px solid white;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.server_message_success a:hover {
+  background: none;
+  border: 1px solid white;
+  color: white;
+}
+
+.server_message_success span {
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.server_message_success span:hover {
+  color: #0f1a2d;
+}
+
 @media (max-width: 63.9375em) {
   .hide-for-mobile {
     display: none;
@@ -573,7 +746,7 @@ form p span,
 
 .hero__image {
   position: relative;
-  background-image: url("/public/src/img/heroImg.png");
+  background-image: url("/front-end/public/src/img/heroImg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -605,7 +778,7 @@ form p span,
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("/public/src/img/heroImg.png");
+  background-image: url("/front-end/public/src/img/heroImg.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1029,6 +1202,12 @@ form p span,
 @media (min-width: 64em) {
   .contact {
     width: 60%;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .contact {
+    display: none;
   }
 }
 

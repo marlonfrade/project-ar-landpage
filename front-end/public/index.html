@@ -16,7 +16,7 @@
     <title>AR Turismo</title>
 
     <!-- StyleSheets -->
-    <link rel="stylesheet" href="/public/src/scss/style.css" />
+    <link rel="stylesheet" href="/front-end/public/src/scss/style.css" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,18 +35,20 @@
     <!-- FavIcons -->
     <link
       rel="shortcut icon"
-      href="/public/src/img/favicon.svg"
+      href="/front-end/public/src/img/favicon.svg"
       type="image/x-icon"
       sizes="144x144"
     />
   </head>
   <body>
+    <div server_message_success class="server_message_success"></div>
+    <div server_message_error class="server_message_error"></div>
     <section class="hero">
       <div class="container">
         <div class="hero__image"></div>
 
         <div class="hero__text container--pall">
-          <img src="/public/src/img/logo.svg" alt="Logo Ar Viagens" />
+          <img src="/front-end/public/src/img/logo.svg" alt="Logo Ar Viagens" />
           <h1>Viagens <span>sem burocracia</span> e com mais economia</h1>
           <p>
             Venda de passagens, reservas em hotel e pacotes completos de viagens
@@ -67,7 +69,7 @@
         <div class="feature__card">
           <div class="feature__card__logo">
             <img
-              src="/public/src/img/AMBIENTALIS -engenharia.png"
+              src="/front-end/public/src/img/AMBIENTALIS -engenharia.png"
               alt="Ambientalis Logo"
             />
           </div>
@@ -79,7 +81,10 @@
             </p>
           </div>
           <div class="feature__card__info">
-            <img src="/public/src/img/cardAuthor.png" alt="Card Author Image" />
+            <img
+              src="/front-end/public/src/img/cardAuthor.png"
+              alt="Card Author Image"
+            />
             <div class="author">
               <h3>Silvia Sobrenome</h3>
               <p>Cargo da Silvia</p>
@@ -89,7 +94,7 @@
         <div class="feature__card">
           <div class="feature__card__logo">
             <img
-              src="/public/src/img/PROVEL -vistoria.png"
+              src="/front-end/public/src/img/PROVEL -vistoria.png"
               alt="Provel Vistoria Logo "
             />
           </div>
@@ -101,7 +106,10 @@
             </p>
           </div>
           <div class="feature__card__info">
-            <img src="/public/src/img/cardAuthor.png" alt="Card Author Image" />
+            <img
+              src="/front-end/public/src/img/cardAuthor.png"
+              alt="Card Author Image"
+            />
             <div class="author">
               <h3>Evandro Guarani</h3>
               <p>Cargo do Evandro</p>
@@ -153,21 +161,27 @@
       </div>
       <div class="clients__images flex flex-jc-sb container container--px">
         <img
-          src="/public/src/img/AMBIENTALIS -engenharia.png"
+          src="/front-end/public/src/img/AMBIENTALIS -engenharia.png"
           alt="Ambientalis Engenharia"
         />
         <img
-          src="/public/src/img/CK -construtora_Prancheta 1.png"
+          src="/front-end/public/src/img/CK -construtora_Prancheta 1.png"
           alt="CK Construtora"
         />
-        <img src="/public/src/img/MENU POKE_Prancheta 1.png" alt="Menu Poke" />
         <img
-          src="/public/src/img/TR Log-transportes.png"
+          src="/front-end/public/src/img/MENU POKE_Prancheta 1.png"
+          alt="Menu Poke"
+        />
+        <img
+          src="/front-end/public/src/img/TR Log-transportes.png"
           alt="TR Log Transportes"
         />
-        <img src="/public/src/img/RUPUS logistica.png" alt="Rupus Logistica" />
         <img
-          src="/public/src/img/PROVEL -vistoria.png"
+          src="/front-end/public/src/img/RUPUS logistica.png"
+          alt="Rupus Logistica"
+        />
+        <img
+          src="/front-end/public/src/img/PROVEL -vistoria.png"
           alt="Provel Vistorias"
         />
       </div>
@@ -180,61 +194,64 @@
         </div>
         <div class="carousel" data-flickity='{ "groupCells": true }'>
           <div class="carousel-cell">
-            <img src="/public/src/img/ico-hospedagem.png" alt="Hospedagem" />
+            <img
+              src="/front-end/public/src/img/ico-hospedagem.png"
+              alt="Hospedagem"
+            />
             <p>Hospedagens nacionais e internacionais</p>
           </div>
           <div class="carousel-cell">
             <img
-              src="/public/src/img/ico-passages-aereas.png"
+              src="/front-end/public/src/img/ico-passages-aereas.png"
               alt="Passagens Aereas"
             />
             <p>Passagens Aéreas nacionais e internacionais</p>
           </div>
           <div class="carousel-cell">
             <img
-              src="/public/src/img/ico-passagens.png"
+              src="/front-end/public/src/img/ico-passagens.png"
               alt="Passagens Rodoviárias"
             />
             <p>Passagens Rodoviárias</p>
           </div>
           <div class="carousel-cell">
             <img
-              src="/public/src/img/ico-checkin.png"
+              src="/front-end/public/src/img/ico-checkin.png"
               alt="Check-in antecipado"
             />
             <p>Check-in antecipado</p>
           </div>
           <div class="carousel-cell">
             <img
-              src="/public/src/img/ico-vistos-consulares.png"
+              src="/front-end/public/src/img/ico-vistos-consulares.png"
               alt="Vistos Consulares"
             />
             <p>Vistos Consulares translado e receptivo</p>
           </div>
           <div class="carousel-cell">
             <img
-              src="/public/src/img/ico-gestao-de-custos.png"
+              src="/front-end/public/src/img/ico-gestao-de-custos.png"
               alt="gestao de custos"
             />
             <p>Gestão de Custo</p>
           </div>
           <div class="carousel-cell">
             <img
-              src="/public/src/img/ico-pacotes-viagens.png"
+              src="/front-end/public/src/img/ico-pacotes-viagens.png"
               alt="Pacotes de Viagens"
             />
             <p>Pacotes Personalizados e viagens de incentivo</p>
           </div>
           <div class="carousel-cell">
             <img
-              src="/public/src/img/ico-seguro-viagem.png"
+              src="/front-end/public/src/img/ico-seguro-viagem.png"
               alt="Seguro Viagem"
             />
             <p>Seguro Viagem</p>
           </div>
           <div class="carousel-cell">
             <img
-              src="/public/src/img/ico-locacao-de-veiculos.png"
+              src="/front-end/public/src/img/ico-locacao-de-veiculos.png"
               alt="Locacao de Veiculos"
             />
             <p>
@@ -244,35 +261,44 @@
           </div>
           <div class="carousel-cell">
             <img
-              src="/public/src/img/ico-cruzeiros-marítimos.png"
+              src="/front-end/public/src/img/ico-cruzeiros-marítimos.png"
               alt="Cruzeiros Maritimos"
             />
             <p>Cruzeiros</p>
           </div>
           <div class="carousel-cell">
             <img
-              src="/public/src/img/ico-atendimento-24h.png"
+              src="/front-end/public/src/img/ico-atendimento-24h.png"
               alt="Atendimento 24horas"
             />
             <p>Atendimento emergencial 24h</p>
           </div>
           <div class="carousel-cell">
-            <img src="/public/src/img/ico-menor-preco.png" alt="Menor Preco" />
+            <img
+              src="/front-end/public/src/img/ico-menor-preco.png"
+              alt="Menor Preco"
+            />
             <p>Menor Preço</p>
           </div>
           <div class="carousel-cell">
-            <img src="/public/src/img/ico-pontuacao.png" alt="Pontuacao" />
+            <img
+              src="/front-end/public/src/img/ico-pontuacao.png"
+              alt="Pontuacao"
+            />
             <p>Pontuação em produtos de fidelidade</p>
           </div>
           <div class="carousel-cell">
             <img
-              src="/public/src/img/ico-congresso-e-evento.png"
+              src="/front-end/public/src/img/ico-congresso-e-evento.png"
               alt="Congressos e Eventos"
             />
             <p>Congressos e eventos</p>
           </div>
           <div class="carousel-cell">
-            <img src="/public/src/img/ico-salas-vip.png" alt="Salas Vip" />
+            <img
+              src="/front-end/public/src/img/ico-salas-vip.png"
+              alt="Salas Vip"
+            />
             <p>Salas VIP no Brasil e exterior</p>
           </div>
         </div>
@@ -310,7 +336,7 @@
       </div>
     </section>
 
-    <form action="" method="post" class="form" id="form">
+    <form onsubmit="validationForm()" class="form" id="form" autocomplete="off">
       <span
         class="closeBtn hide-for-desktop"
         onclick="this.parentElement.style.display='none'"
@@ -318,12 +344,12 @@
       >
       <h3>Quero viajar sem burocracia</h3>
 
-      <div class="form__input">
+      <div error_name class="form__input">
         <input type="text" id="name" placeholder="Qual seu nome?" />
         <label for="name">Nome*</label>
       </div>
 
-      <div class="form__input">
+      <div error_company class="form__input">
         <input
           type="text"
           id="company"
@@ -332,7 +358,7 @@
         <label for="company">Empresa</label>
       </div>
 
-      <div class="form__input">
+      <div error_phone class="form__input">
         <input
           type="text"
           id="phone"
@@ -341,7 +367,7 @@
         <label for="phone">Telefone*</label>
       </div>
 
-      <div class="form__input">
+      <div error_message class="form__input">
         <textarea
           name="message"
           id="message"
@@ -362,7 +388,7 @@
     <footer class="footer">
       <div class="footer__content">
         <div class="info flex flex-jc-fs">
-          <img src="/public/src/img/logo.svg" alt="Logo AR" />
+          <img src="/front-end/public/src/img/logo.svg" alt="Logo AR" />
           <div class="location">
             <h3>Escritório de Negócios</h3>
             <p>Av. Osvaldo Reis, 3385</p>
@@ -378,6 +404,6 @@
     </footer>
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="/public/src/js/script.js"></script>
+    <script src="/front-end/public/src/js/script.js"></script>
   </body>
 </html>
