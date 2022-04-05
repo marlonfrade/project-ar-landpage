@@ -16,8 +16,12 @@
   }
   .carousel {
     &-cell {
-      margin-right: 50px;
-      margin-left: 50px;
+      margin-right: 10px;
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       img {
         width: 162px;
         height: 162px;
@@ -41,5 +45,19 @@
       background: none;
       color: $darkBlue;
     }
+  }
+
+  .flickity-enabled {
+    position: relative;
+    width: 80%;
+    margin-left: 80%;
+    transform: translateX(-87%);
+  }
+
+  .flickity-viewport {
+    position: relative;
+    width: 83%;
+    margin-left: 80%;
+    transform: translateX(-87%);
   }
 }

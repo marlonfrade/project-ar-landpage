@@ -10,12 +10,12 @@
 
   &__image {
     position: absolute;
-    top: 4%;
+    top: 6%;
     left: 55%;
 
     video {
-      width: 500px;
-      height: 500px;
+      width: 528px;
+      height: 320px;
     }
 
     @include breakpoint-down(medium) {
@@ -94,9 +94,14 @@
     }
 
     h1 {
-      font-family: "Ruda", sans-serif;
+      font-family: "Ruda";
+      font-style: normal;
       font-weight: 900;
-      font-size: $font-lg;
+      font-size: 72px;
+      line-height: 100%;
+
+      letter-spacing: -0.03em;
+
       span {
         color: $orangeIsh;
       }
@@ -105,7 +110,7 @@
     p {
       font-family: "Public Sans";
       font-style: normal;
-      font-weight: 100;
+      font-weight: 500;
       font-size: 24px;
       line-height: 28px;
       color: $lightBlue;

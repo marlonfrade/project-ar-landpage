@@ -44,12 +44,19 @@
     .location {
       color: $orangeIsh;
       font-size: $font-sm;
+      margin-top: 45px;
 
       h3 {
         width: 200px;
         margin: 0px;
+        text-align: start;
         color: $orangeIsh;
-        font-weight: 900;
+        font-family: "Public Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.5px;
 
         @include breakpoint-up(large) {
           margin: 5px auto;
@@ -58,7 +65,13 @@
 
       p {
         text-align: start;
-        margin: 0px;
+        font-family: "Public Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.5px;
+        margin: 1px auto;
       }
     }
 
@@ -66,6 +79,12 @@
       h3 {
         color: $orangeIsh;
         margin-bottom: 0px;
+        font-family: "Public Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.5px;
       }
     }
 
