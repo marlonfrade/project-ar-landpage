@@ -27,6 +27,13 @@
     justify-content: center;
     align-items: flex-start;
 
+    @include breakpoint-down(medium) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     &:hover {
       transform: scale(1.05);
     }

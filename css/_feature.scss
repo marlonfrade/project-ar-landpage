@@ -66,8 +66,15 @@
       }
 
       .author {
+        width: 100%;
         display: flex;
         flex-direction: column;
+
+        @include breakpoint-down(medium) {
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
       }
 
       h3 {
