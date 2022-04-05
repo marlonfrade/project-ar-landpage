@@ -987,7 +987,6 @@ form p span,
 }
 
 .article__item {
-  border: 1px solid red;
   overflow: hidden;
   background: none;
   -webkit-transition: all 150ms ease-in-out;
@@ -1238,7 +1237,7 @@ form p span,
   font-family: "Ruda";
   font-style: normal;
   font-weight: 900;
-  font-size: 4rem;
+  font-size: 4.5rem;
   line-height: 100%;
   letter-spacing: -0.03em;
   color: #508ca2;
