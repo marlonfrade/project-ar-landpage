@@ -18,10 +18,15 @@
   }
 
   &__item {
+    border: 1px solid red;
     overflow: hidden;
     background: none;
     // box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
     transition: all 150ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 
     &:hover {
       transform: scale(1.05);
@@ -32,6 +37,7 @@
     font-size: 1.0625rem;
     line-height: 1.2;
     margin-bottom: 0.75rem;
+    text-align: start;
 
     h1 {
       font-weight: 900;
@@ -47,6 +53,7 @@
   }
 
   &__description {
+    width: 250px;
     color: $mediumBlue;
     font-family: "Public Sans";
     font-style: normal;

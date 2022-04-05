@@ -47,6 +47,7 @@ function validationForm() {
         value.parentElement.querySelector(".error").style.display = "block";
       } else if (value.value && value.parentElement.querySelector(".error")) {
         value.parentElement.querySelector(".error").remove();
+        e;
       } else if (
         values[0].value &&
         values[1].value &&

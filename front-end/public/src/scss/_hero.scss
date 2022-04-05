@@ -9,24 +9,43 @@
   }
 
   &__image {
-    position: relative;
-    background-image: url("/front-end/public/src/img/heroImg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    min-height: 17.5rem;
+    position: absolute;
+    top: 0;
+    left: 1000px;
 
-    @include breakpoint-up(medium) {
-      min-height: 25rem;
-      background-position: center 0%;
+    video {
+      width: 700px;
+      height: 700px;
     }
 
-    @include breakpoint-up(large) {
-      flex: 3;
-      order: 2;
-      height: 41rem;
-      background-image: none;
+    @include breakpoint-down(medium) {
+      position: relative;
+      width: 100%;
+      left: 0;
+
+      video {
+        width: 100%;
+        height: 400px;
+      }
     }
+
+    // background-image: url("/front-end/public/src/img/heroImg.png");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    // min-height: 17.5rem;
+
+    // @include breakpoint-up(medium) {
+    //   min-height: 25rem;
+    //   background-position: center 0%;
+    // }
+
+    // @include breakpoint-up(large) {
+    //   flex: 3;
+    //   order: 2;
+    //   height: 41rem;
+    //   background-image: none;
+    // }
 
     // &::before {
     //   @include breakpoint-up(large) {
@@ -42,28 +61,28 @@
     //   }
     // }
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-image: url("/front-end/public/src/img/heroImg.png");
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center center;
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    //   background-image: url("/front-end/public/src/img/heroImg.png");
+    //   background-size: 100%;
+    //   background-repeat: no-repeat;
+    //   background-position: center center;
 
-      @include breakpoint-up(medium) {
-        background-size: 52%;
-      }
+    //   @include breakpoint-up(medium) {
+    //     background-size: 52%;
+    //   }
 
-      @include breakpoint-up(large) {
-        width: 100%;
-        height: 100%;
-        background-size: 100%;
-        background-position: center 58%;
-        left: -7%;
-      }
-    }
+    //   @include breakpoint-up(large) {
+    //     width: 100%;
+    //     height: 100%;
+    //     background-size: 100%;
+    //     background-position: center 58%;
+    //     left: -7%;
+    //   }
+    // }
   }
 
   &__text {

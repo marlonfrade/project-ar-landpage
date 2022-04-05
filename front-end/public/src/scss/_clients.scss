@@ -24,6 +24,7 @@
 
     img {
       margin: 0 auto;
+      height: 80px;
     }
 
     @include breakpoint-up(medium) {

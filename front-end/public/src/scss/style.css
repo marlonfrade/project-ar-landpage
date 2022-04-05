@@ -312,6 +312,7 @@ button,
   font-size: 1.125rem;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
+  margin-top: 25px;
 }
 
 button:hover,
@@ -472,25 +473,37 @@ form input,
 form input::-webkit-input-placeholder,
 .form input::-webkit-input-placeholder {
   color: #0f1a2d;
+  font-style: normal;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 form input:-ms-input-placeholder,
 .form input:-ms-input-placeholder {
   color: #0f1a2d;
+  font-style: normal;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 form input::-ms-input-placeholder,
 .form input::-ms-input-placeholder {
   color: #0f1a2d;
+  font-style: normal;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 form input::placeholder,
 .form input::placeholder {
   color: #0f1a2d;
+  font-style: normal;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 form input:focus,
@@ -519,21 +532,37 @@ form textarea,
 form textarea::-webkit-input-placeholder,
 .form textarea::-webkit-input-placeholder {
   color: #0f1a2d;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 form textarea:-ms-input-placeholder,
 .form textarea:-ms-input-placeholder {
   color: #0f1a2d;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 form textarea::-ms-input-placeholder,
 .form textarea::-ms-input-placeholder {
   color: #0f1a2d;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 form textarea::placeholder,
 .form textarea::placeholder {
   color: #0f1a2d;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 form textarea:focus,
@@ -745,58 +774,25 @@ form p span,
 }
 
 .hero__image {
-  position: relative;
-  background-image: url("/front-end/public/src/img/heroImg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  min-height: 17.5rem;
-}
-
-@media (min-width: 40em) {
-  .hero__image {
-    min-height: 25rem;
-    background-position: center 0%;
-  }
-}
-
-@media (min-width: 64em) {
-  .hero__image {
-    -webkit-box-flex: 3;
-        -ms-flex: 3;
-            flex: 3;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    height: 41rem;
-    background-image: none;
-  }
-}
-
-.hero__image::after {
-  content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url("/front-end/public/src/img/heroImg.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
+  top: 0;
+  left: 1000px;
 }
 
-@media (min-width: 40em) {
-  .hero__image::after {
-    background-size: 52%;
-  }
+.hero__image video {
+  width: 700px;
+  height: 700px;
 }
 
-@media (min-width: 64em) {
-  .hero__image::after {
+@media (max-width: 63.9375em) {
+  .hero__image {
+    position: relative;
     width: 100%;
-    height: 100%;
-    background-size: 100%;
-    background-position: center 58%;
-    left: -7%;
+    left: 0;
+  }
+  .hero__image video {
+    width: 100%;
+    height: 400px;
   }
 }
 
@@ -909,6 +905,11 @@ form p span,
   background: none;
 }
 
+.feature__card__logo img {
+  width: 140px;
+  height: 100px;
+}
+
 .feature__card__content p {
   width: 100%;
   font-size: 1.125rem;
@@ -986,10 +987,24 @@ form p span,
 }
 
 .article__item {
+  border: 1px solid red;
   overflow: hidden;
   background: none;
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .article__item:hover {
@@ -1001,6 +1016,7 @@ form p span,
   font-size: 1.0625rem;
   line-height: 1.2;
   margin-bottom: 0.75rem;
+  text-align: start;
 }
 
 .article__title h1 {
@@ -1018,6 +1034,7 @@ form p span,
 }
 
 .article__description {
+  width: 250px;
   color: #012c46;
   font-family: "Public Sans";
   font-style: normal;
@@ -1060,6 +1077,7 @@ form p span,
 
 .clients__images img {
   margin: 0 auto;
+  height: 80px;
 }
 
 @media (min-width: 40em) {
@@ -1153,6 +1171,7 @@ form p span,
 }
 
 .banner__content h1 {
+  width: 100%;
   margin-top: 32px;
   margin-bottom: 64px;
   font-family: "Ruda";
