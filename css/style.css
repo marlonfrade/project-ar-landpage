@@ -301,15 +301,23 @@ a:hover {
 
 button,
 .button {
+  width: 311px;
+  height: 68px;
   display: inline-block;
-  padding: 25px 50px;
+  padding: 10px 24px;
   background: none;
   border: 1px solid #eab281;
   border-radius: 100px;
   cursor: pointer;
   color: #eab281;
+  font-family: "Public Sans";
+  font-style: normal;
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
   margin-top: 25px;
@@ -776,13 +784,13 @@ form p span,
 
 .hero__image {
   position: absolute;
-  top: 0;
-  left: 60%;
+  top: 4%;
+  left: 55%;
 }
 
 .hero__image video {
-  width: 700px;
-  height: 700px;
+  width: 500px;
+  height: 500px;
 }
 
 @media (max-width: 63.9375em) {

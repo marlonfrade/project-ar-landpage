@@ -10,12 +10,12 @@
 
   &__image {
     position: absolute;
-    top: 0;
-    left: 60%;
+    top: 4%;
+    left: 55%;
 
     video {
-      width: 700px;
-      height: 700px;
+      width: 500px;
+      height: 500px;
     }
 
     @include breakpoint-down(medium) {
