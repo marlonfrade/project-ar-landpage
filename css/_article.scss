@@ -25,21 +25,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-
-    @include breakpoint-down(medium) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    &:hover {
-      transform: scale(1.05);
-    }
+    align-items: center;
+    height: 100%;
   }
 
   &__title {
+    width: 65%;
     font-size: 1.0625rem;
     line-height: 1.2;
     margin-bottom: 0.75rem;

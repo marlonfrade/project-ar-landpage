@@ -57,14 +57,16 @@
         font-size: 12px;
         line-height: 14px;
         letter-spacing: 0.5px;
+        text-align: center;
 
         @include breakpoint-up(large) {
           margin: 5px auto;
+          text-align: start;
         }
       }
 
       p {
-        text-align: start;
+        text-align: center;
         font-family: "Public Sans";
         font-style: normal;
         font-weight: 400;
@@ -72,6 +74,10 @@
         line-height: 14px;
         letter-spacing: 0.5px;
         margin: 1px auto;
+
+        @include breakpoint-up(large) {
+          text-align: start;
+        }
       }
     }
 

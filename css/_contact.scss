@@ -1,5 +1,7 @@
 .contact {
   width: 100%;
+  padding: 80px 0px;
+  margin-left: 200px;
 
   @include breakpoint-up(large) {
     width: 60%;
@@ -10,7 +12,6 @@
   }
 
   &__intro {
-    padding-left: 10%;
     h2 {
       font-family: "Ruda";
       font-style: normal;
