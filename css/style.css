@@ -331,7 +331,7 @@ button:hover,
 form,
 .form {
   width: 600px;
-  height: 680px;
+  height: 720px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -578,6 +578,7 @@ form textarea:focus + label,
 
 form button,
 .form button {
+  width: 100%;
   background: #eab281;
   color: #0f1a2d;
   margin: 12px 0px;
@@ -1187,7 +1188,7 @@ form p span,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #0f1a2d;
+  background: #012c46;
 }
 
 .banner__intro h3 {

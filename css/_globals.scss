@@ -182,7 +182,7 @@ button,
 form,
 .form {
   width: 600px;
-  height: 680px;
+  height: 720px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -340,6 +340,7 @@ form,
   }
 
   button {
+    width: 100%;
     background: $orangeIsh;
     color: $darkBlue;
     margin: 12px 0px;
