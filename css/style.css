@@ -338,8 +338,8 @@ button:hover,
 
 form,
 .form {
-  width: 600px;
-  height: 695px;
+  width: 528px;
+  height: 640px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,8 +356,8 @@ form,
   background: #508ca2;
   position: absolute;
   padding: 53px 100px;
-  left: 50%;
-  top: 83%;
+  left: 55%;
+  top: 83.8%;
 }
 
 @media (max-width: 63.9375em) {
@@ -591,9 +591,11 @@ form textarea:focus + label,
 form button,
 .form button {
   width: 100%;
+  height: 68px;
   background: #eab281;
   color: #0f1a2d;
   margin: 12px 0px;
+  padding: 24px 48px;
 }
 
 form button:hover,
@@ -612,7 +614,7 @@ form p,
   line-height: 12px;
   letter-spacing: 0.5px;
   color: #012c46;
-  text-align: center;
+  text-align: left;
 }
 
 form p span,
@@ -812,11 +814,14 @@ form p span,
 .hero__text {
   text-align: center;
   padding-top: 3rem;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .hero__text img {
   width: 163px;
-  margin-bottom: 50px;
+  height: 98px;
+  margin-bottom: 56px;
 }
 
 .hero__text h1 {
@@ -839,6 +844,7 @@ form p span,
   font-size: 24px;
   line-height: 28px;
   color: #508ca2;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 64em) {
@@ -850,9 +856,7 @@ form p span,
         -ms-flex-order: 1;
             order: 1;
     text-align: left;
-  }
-  .hero__text img {
-    width: 200px;
+    padding-left: 5.6875rem;
   }
   .hero__text h1 {
     width: 700px;
@@ -999,7 +1003,7 @@ form p span,
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  gap: 5.875rem;
+  gap: 0.575rem;
 }
 
 @media (min-width: 40em) {
@@ -1060,7 +1064,8 @@ form p span,
 }
 
 .article__description {
-  width: 250px;
+  width: 280px;
+  height: 100%;
   color: #012c46;
   font-family: "Public Sans";
   font-style: normal;
@@ -1271,8 +1276,9 @@ form p span,
 
 .contact {
   width: 100%;
-  padding: 80px 0px;
-  margin-left: 200px;
+  height: 360px;
+  padding: 0px;
+  margin-left: 91px;
 }
 
 @media (min-width: 64em) {
@@ -1285,6 +1291,10 @@ form p span,
   .contact {
     display: none;
   }
+}
+
+.contact__intro {
+  padding-top: 78px;
 }
 
 .contact__intro h2 {
@@ -1371,17 +1381,17 @@ form p span,
 }
 
 .footer__content img {
-  width: 100px;
-  height: 80px;
-  margin: 25px auto;
+  width: 163px;
+  height: 98px;
+  margin-top: 25px auto;
 }
 
 @media (min-width: 64em) {
   .footer__content img {
     margin-right: 25px;
-    margin-top: 2px;
-    width: 180px;
-    height: 140px;
+    margin-top: 28px;
+    width: 163px;
+    height: 98px;
   }
 }
 
@@ -1457,12 +1467,13 @@ form p span,
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.5px;
+  text-align: start;
 }
 
 @media (min-width: 64em) {
   .footer__content {
     width: 30%;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -88,10 +88,13 @@
   &__text {
     text-align: center;
     padding-top: 3rem;
+    padding-left: 0px;
+    padding-right: 0px;
 
     img {
       width: 163px;
-      margin-bottom: 50px;
+      height: 98px;
+      margin-bottom: 56px;
     }
 
     h1 {
@@ -115,16 +118,15 @@
       font-size: 24px;
       line-height: 28px;
       color: $lightBlue;
+      margin-bottom: 15px;
     }
 
     @include breakpoint-up(large) {
       flex: 2;
       order: 1;
       text-align: left;
+      padding-left: 5.6875rem;
 
-      img {
-        width: 200px;
-      }
       h1 {
         width: 700px;
         font-weight: 900;

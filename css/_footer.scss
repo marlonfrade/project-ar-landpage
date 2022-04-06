@@ -19,15 +19,15 @@
     justify-content: space-between;
 
     img {
-      width: 100px;
-      height: 80px;
-      margin: 25px auto;
+      width: 163px;
+      height: 98px;
+      margin-top: 25px auto;
 
       @include breakpoint-up(large) {
         margin-right: 25px;
-        margin-top: 2px;
-        width: 180px;
-        height: 140px;
+        margin-top: 28px;
+        width: 163px;
+        height: 98px;
       }
     }
 
@@ -91,12 +91,13 @@
         font-size: 12px;
         line-height: 14px;
         letter-spacing: 0.5px;
+        text-align: start;
       }
     }
 
     @include breakpoint-up(large) {
       width: 30%;
-      padding-bottom: 25px;
+      padding-bottom: 15px;
     }
   }
 }

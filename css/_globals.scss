@@ -189,8 +189,8 @@ button,
 
 form,
 .form {
-  width: 600px;
-  height: 695px;
+  width: 528px;
+  height: 640px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -198,8 +198,8 @@ form,
   background: $lightBlue;
   position: absolute;
   padding: 53px 100px;
-  left: 50%;
-  top: 83%;
+  left: 55%;
+  top: 83.8%;
 
   @include breakpoint-down(medium) {
     display: none;
@@ -350,9 +350,11 @@ form,
 
   button {
     width: 100%;
+    height: 68px;
     background: $orangeIsh;
     color: $darkBlue;
     margin: 12px 0px;
+    padding: 24px 48px;
 
     &:hover {
       border: 1px solid $darkBlue;
@@ -369,7 +371,7 @@ form,
     line-height: 12px;
     letter-spacing: 0.5px;
     color: $mediumBlue;
-    text-align: center;
+    text-align: left;
 
     span {
       color: $darkBlue;
