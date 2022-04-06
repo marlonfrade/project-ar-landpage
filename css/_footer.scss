@@ -92,6 +92,9 @@
         line-height: 14px;
         letter-spacing: 0.5px;
         text-align: start;
+        @include breakpoint-down(medium) {
+          text-align: center;
+        }
       }
     }
 

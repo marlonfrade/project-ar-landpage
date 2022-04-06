@@ -45,6 +45,7 @@
         font-size: $font-lg;
         font-weight: 900;
         color: $mediumBlue;
+        margin-top: 35px;
       }
     }
   }
@@ -58,6 +59,12 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
+
+    span {
+      font-weight: 900;
+      font-style: bold;
+      font-size: 26px;
+    }
 
     @include breakpoint-down(medium) {
       text-align: center;

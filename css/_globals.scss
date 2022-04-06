@@ -200,6 +200,7 @@ form,
   padding: 53px 100px;
   left: 55%;
   top: 83.8%;
+  overflow: auto;
 
   @include breakpoint-down(medium) {
     display: none;
@@ -308,7 +309,8 @@ form,
       line-height: 24px;
     }
 
-    &:focus {
+    &:focus,
+    &:hover {
       border: 1px solid $orangeIsh;
       outline: none;
     }
@@ -327,7 +329,12 @@ form,
     padding: 12px 20px;
     border: 1px solid $darkBlue;
     border-radius: 4px;
+    font-family: "Public Sans";
     color: $darkBlue;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 
     &::placeholder {
       font-family: "Public Sans";
@@ -338,7 +345,8 @@ form,
       line-height: 24px;
     }
 
-    &:focus {
+    &:focus,
+    &:hover {
       border: 1px solid $orangeIsh;
       outline: none;
     }
