@@ -200,7 +200,6 @@ form,
   padding: 53px 100px;
   left: 55%;
   top: 83.8%;
-  overflow: auto;
 
   @include breakpoint-down(medium) {
     display: none;

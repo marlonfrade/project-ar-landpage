@@ -358,7 +358,6 @@ form,
   padding: 53px 100px;
   left: 55%;
   top: 83.8%;
-  overflow: auto;
 }
 
 @media (max-width: 63.9375em) {
@@ -1386,7 +1385,7 @@ form p span,
   background-color: #0f1a2d;
   height: 368px;
   color: white;
-  padding-left: 2.5rem;
+  padding-left: 5.5rem;
   padding-top: 2.5rem;
   text-align: center;
 }
