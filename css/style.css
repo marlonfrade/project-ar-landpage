@@ -755,6 +755,7 @@ form p span,
 @media (min-width: 40em) {
   .feature {
     text-align: left;
+    padding-bottom: 5rem;
   }
 }
 .feature__intro {
@@ -778,22 +779,26 @@ form p span,
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    margin: 0px 70px;
+    margin: 0px 18px;
     height: 350px;
   }
 }
 .feature__card {
   width: 100%;
+  height: 100%;
   padding: 40px;
   border: 1px solid #508ca2;
   border-radius: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+}
+.feature__card:nth-child(2) {
+  padding: 10px 40px;
 }
 .feature__card__logo {
   background: none;
 }
-.feature__card__logo img :nth-child(1) {
-  width: 50px;
+.feature__card__logo img {
+  width: 200px;
   height: 80px;
 }
 .feature__card__logo img :last-child {
