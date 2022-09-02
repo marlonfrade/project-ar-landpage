@@ -852,6 +852,12 @@ form p span,
   background-color: #eab281;
 }
 
+.article__content {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+  padding-right: 14.5rem;
+  padding-left: 7.5rem;
+}
 .article__grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -881,7 +887,6 @@ form p span,
   width: 65%;
   font-size: 1.0625rem;
   line-height: 1.2;
-  margin-bottom: 0.75rem;
   text-align: start;
 }
 .article__title h1 {
@@ -898,7 +903,7 @@ form p span,
   }
 }
 .article__description {
-  width: 280px;
+  width: 243px;
   height: 100%;
   color: #012c46;
   font-family: "Public Sans";
@@ -918,13 +923,18 @@ form p span,
   }
 }
 
+.clients {
+  padding-bottom: 4rem;
+  padding-right: 5.5rem;
+  padding-left: 6.5rem;
+}
 .clients__intro {
   width: 100%;
 }
 .clients__intro h3 {
   width: 100%;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-family: "Ruda";
   font-style: normal;
   font-weight: 900;
@@ -957,6 +967,10 @@ form p span,
 
 .solutions {
   background-color: #508ca2;
+}
+.solutions__content {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
 }
 .solutions__intro {
   width: 100%;

@@ -1,73 +1,80 @@
 .articles {
-  background-color: $orangeIsh;
+    background-color: $orangeIsh;
 }
 
 .article {
-  &__grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.575rem;
 
-    @include breakpoint-up(medium) {
-      grid-template-columns: repeat(2, 1fr);
+    &__content{
+        padding-top: 4.5rem;
+        padding-bottom: 4.5rem;
+        padding-right: 14.5rem;
+        padding-left: 7.5rem;
     }
 
-    @include breakpoint-up(large) {
-      grid-template-columns: repeat(3, 1fr);
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.575rem;
+
+        @include breakpoint-up(medium) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint-up(large) {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
-  }
 
-  &__item {
-    overflow: hidden;
-    background: none;
-    // box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
-    transition: all 150ms ease-in-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
+    &__item {
+        overflow: hidden;
+        background: none;
+        // box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+        transition: all 150ms ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
 
-  &__title {
-    width: 65%;
-    font-size: 1.0625rem;
-    line-height: 1.2;
-    margin-bottom: 0.75rem;
-    text-align: start;
+    &__title {
+        width: 65%;
+        font-size: 1.0625rem;
+        line-height: 1.2;
+        text-align: start;
 
-    h1 {
-      font-weight: 900;
-      color: $mediumBlue;
+        h1 {
+            font-weight: 900;
+            color: $mediumBlue;
 
-      @include breakpoint-down(medium) {
-        text-align: center;
-        font-size: $font-lg;
-        font-weight: 900;
+            @include breakpoint-down(medium) {
+                text-align: center;
+                font-size: $font-lg;
+                font-weight: 900;
+                color: $mediumBlue;
+                margin-top: 35px;
+            }
+        }
+    }
+
+    &__description {
+        width: 243px;
+        height: 100%;
         color: $mediumBlue;
-        margin-top: 35px;
-      }
-    }
-  }
+        font-family: "Public Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
 
-  &__description {
-    width: 280px;
-    height: 100%;
-    color: $mediumBlue;
-    font-family: "Public Sans";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
+        span {
+            font-weight: 900;
+            font-style: bold;
+            font-size: 26px;
+        }
 
-    span {
-      font-weight: 900;
-      font-style: bold;
-      font-size: 26px;
+        @include breakpoint-down(medium) {
+            text-align: center;
+        }
     }
-
-    @include breakpoint-down(medium) {
-      text-align: center;
-    }
-  }
 }
